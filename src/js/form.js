@@ -1,67 +1,6 @@
-const form = document.querySelector('#myForm');
-const campos = document.querySelectorAll('.form__input');
-const spanErro = document.querySelectorAll('#inputError');
-const emailRegex = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
-const campoDoFormulario = document.querySelector('.contato__form');
-
-form.addEventListener('submit', (event) => {
-    event.preventDefault();
-
-    let isValid = true;
-
-    if (!validaNome(0)) {
-        isValid = false;
-    }
-
-    if (!validaNome(2)) {
-        isValid = false;
-    }
-
-    if (!validaNome(3)) {
-        isValid = false;
-    }
-
-    if (!validaEmail()) {
-        isValid = false;
-    }
-
-    if (isValid) {
-        form.submit();
-        campoDoFormulario.innerHTML = `
+const form=document.querySelector("#myForm"),campos=document.querySelectorAll(".form__input"),spanErro=document.querySelectorAll("#inputError"),emailRegex=/^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/,campoDoFormulario=document.querySelector(".contato__form");form.addEventListener("submit",a=>{a.preventDefault();let b=!0;validaNome(0)||(b=!1),validaNome(2)||(b=!1),validaNome(3)||(b=!1),validaEmail()||(b=!1),b&&(form.submit(),campoDoFormulario.innerHTML=`
             <div class="messageSent d-flex flex-column align-items-center justify-content-center">
                 <img src="src/images/mailSent.gif" alt="email enviado" width="250px">
                 <h3 class="titulo-section-roxa text-center">E-mail enviado com sucesso!</h3>
                 <p class="projeto__texto text-center">Retornarei o contato em até 5 dias úteis.</p>
-            </div>`;
-    }
-});
-
-function setError(index) {
-    campos[index].style.border = '2px solid rgb(245, 71, 71)';
-    spanErro[index].style.display = 'block';
-}
-
-function removeError(index) {
-    campos[index].style.border = 'none';
-    spanErro[index].style.display = 'none';
-}
-
-function validaNome(index) {
-    if (campos[index].value.length < 3) {
-        setError(index);
-        return false;
-    } else {
-        removeError(index);
-        return true;
-    }
-}
-
-function validaEmail() {
-    if (!emailRegex.test(campos[1].value)) {
-        setError(1);
-        return false;
-    } else {
-        removeError(1);
-        return true;
-    }
-}
+            </div>`)});function setError(a){campos[a].style.border="2px solid rgb(245, 71, 71)",spanErro[a].style.display="block"}function removeError(a){campos[a].style.border="none",spanErro[a].style.display="none"}function validaNome(a){return 3>campos[a].value.length?(setError(a),!1):(removeError(a),!0)}function validaEmail(){return emailRegex.test(campos[1].value)?(removeError(1),!0):(setError(1),!1)}
