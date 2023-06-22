@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"
+    defer></script>
+  <link rel="stylesheet" href="src/css/style.css">
+  <link rel="shortcut icon" href="src/images/icon.svg" type="image/x-icon">
+  <script src="/src/js/mostrarMais.js" defer></script>
+  <script src="src/js/form.js" defer></script>
+  <script src="src/js/textAuto.js" defer></script>
+  <script src="src/js/scrollReveal.js" defer></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <title>Gabriela C. Zunino</title>
+</head>
+
+<body>
+  <header id="home">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="src/images/Logo.svg" alt="Logo Gabriela C Zunino">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span><img src="src/images/list.svg" alt="menu__btn"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto d-flex align-items-center justify-content-center">
+            <li class="nav-item">
+              <a class="nav-text" href="#banner-area">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-text" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-text" href="#area-projetos">Projetos</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn d-flex justify-content-center align-items-center" href="#contato">Contato</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="banner-area">
+      <div class="bg">
+        <div class="container">
+          <div class="banner__conteudo pt-5 d-flex flex-md-row flex-column justify-content-center align-items-center">
+            <img src="src/images/Gabriela.png" alt="foto da Gabriela C Zunino" class="banner__img me-md-5">
+
+            <div class="banner__texto d-flex flex-column align-items-center align-items-md-start">
+              <h1 class="banner__titulo text-center text-md-start">Gabriela, 22<br /><span id="textAuto"></span></h1>
+              <p class="banner__sobre py-2 text-center text-md-start">Eu sou formada em lorem ipsum sit amet consectetur
+                e atualmente estou
+                participando no projeto Oracle ONE na Alura.</p>
+
+              <div class="banner__botoes d-flex flex-column flex-md-row my-2 align-items-center justify-content-center">
+                <a href="https://github.com/gaberelaa"
+                  class="banner__btn d-flex justify-content-center align-items-center me-md-4 mb-3" target="_blank">
+                  <img src="src/images/github 1.svg" alt="logo github" class="banner__btn-img pe-2">
+                  GITHUB
+                </a>
+                <a href="https://www.linkedin.com/in/gabrielazunino/"
+                  class="banner__btn d-flex justify-content-center align-items-center me-md-4 mb-3" target="_blank">
+                  <img src="src/images/linkedin 1.svg" alt="logo linkedin" class="banner__btn-img pe-2">
+                  LINKEDIN
+                </a>
+
+                <a href="#" class="banner__btn d-flex justify-content-center align-items-center mb-3" target="_blank">
+                  <img src="src/images/card-text.svg" alt="logo linkedin" class="banner__btn-img pe-2">
+                  CURRICULO
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="src/images/onda_1.png" class="divisoria img-fluid">
+    </section>
+
+    <section id="cursos-formacao">
+      <div class="container">
+        <div class="cursos-formacao__content d-flex flex-column align-items-center my-5">
+          <h2 class="titulo-section-branca text-center">Cursos & Formações</h2>
+
+          <div class="cursos d-flex justify-content-between flex-wrap my-md-5">
+            <div class="curso my-4">
+              <div class="curso__img d-flex justify-content-center align-items-center">
+                <a href="https://cursos.alura.com.br/user/gabrielazunino/degree-front-end-turma5-one-579096/certificate"
+                  target="_blank"><img src="/src/images/certificados/logo_ALURA.png"
+                    alt="logo instituição de ensino alura"></a>
+              </div>
+
+              <div class="curso__texto d-flex flex-column align-items-center py-4">
+                <h3 class="curso__titulo text-uppercase text-center">Formação em<br />Desenvolvimento Front-end</h3>
+                <p class="fw-bold text-center">
+                  Aprendi a desenvolver interfaces de usuário atraentes e responsivas com foco em acessibilidade e
+                  desempenho, utilizando tecnologias como HTML, CSS e JavaScript.
+                </p>
+              </div>
+            </div>
+
+            <div class="curso my-4">
+              <div class="curso__img d-flex justify-content-center align-items-center">
+                <a href="https://cursos.alura.com.br/user/gabrielazunino/degree-business-agility-turma5-one-579118/certificate"
+                  target="_blank"><img src="/src/images/certificados/logo_ALURA.png"
+                    alt="logo instituição de ensino alura"></a>
+              </div>
+
+              <div class="curso__texto d-flex flex-column align-items-center py-4">
+                <h3 class="curso__titulo text-uppercase text-center">Formação em<br />Business Agility</h3>
+                <p class="fw-bold text-center">
+                  Aprendi o Mindset Ágil, estruturação de equipes e mensuração de resultados, expandir a agilidade para
+                  outros projetos e áreas, impulsionando o sucesso da empresa.
+                </p>
+              </div>
+            </div>
+
+            <div class="curso my-4">
+              <div class="curso__img d-flex justify-content-center align-items-center">
+                <a href="https://empresas.descomplica.com.br/#/certificado/4a0d4b6e-781c-4298-8989-5dfa23360d42"
+                  target="_blank"><img src="/src/images/certificados/logoInstitutoNu.png"
+                    alt="logo instituto NU + descomplica"></a>
+              </div>
+
+              <div class="curso__texto d-flex flex-column align-items-center py-4">
+                <h3 class="curso__titulo text-uppercase text-center">Design Thinking, UX e Metodologias Ágeis</h3>
+                <p class="fw-bold text-center">
+                  Desenvolvi habilidades em UX design e práticas ágeis, abordagem centrada no usuário, técnicas de
+                  pesquisa e prototipação para criar soluções inovadoras e colaborativas.
+                </p>
+              </div>
+            </div>
+
+            <div class="curso my-4">
+              <div class="curso__img d-flex justify-content-center align-items-center">
+                <a href="https://empresas.descomplica.com.br/#/certificado/fb8136c1-b3ff-40ca-a9f5-7c4e1dd2fcd7"
+                  target="_blank"><img src="/src/images/certificados/logoInstitutoNu.png"
+                    alt="logo instituto NU + descomplica"></a>
+              </div>
+
+              <div class="curso__texto d-flex flex-column align-items-center py-4">
+                <h3 class="curso__titulo text-uppercase text-center">Java Script</h3>
+                <p class="fw-bold text-center">
+                  Adquiri conhecimentos em variáveis, funções, DOM, requisições e consumo de APIs. Tive uma compreensão
+                  aprofundada dessa linguagem, posso desenvolver sites dinâmicos e outros projetos incriveis.
+                </p>
+              </div>
+            </div>
+
+            <div class="curso my-4">
+              <div class="curso__img d-flex justify-content-center align-items-center">
+                <a href="https://empresas.descomplica.com.br/#/certificado/546088b1-3071-4ff8-87dc-6d30b215b2cf"
+                  target="_blank"><img src="/src/images/certificados/logoInstitutoNu.png"
+                    alt="logo instituto NU + descomplica"></a>
+              </div>
+
+              <div class="curso__texto d-flex flex-column align-items-center py-4">
+                <h3 class="curso__titulo text-uppercase text-center">React</h3>
+                <p class="fw-bold text-center">
+                  Aprendi a criar componentes reutilizáveis, gerenciar o estado da aplicação e integrar com APIs, os
+                  conceitos de virtual DOM, roteamento e ciclo de vida dos componentes, para aplicações web modernas e
+                  eficientes.
+                </p>
+              </div>
+            </div>
+
+            <div class="curso my-4">
+              <div class="curso__img d-flex justify-content-center align-items-center">
+                <a href="https://empresas.descomplica.com.br/#/certificado/546088b1-3071-4ff8-87dc-6d30b215b2cf"
+                  target="_blank"><img src="/src/images/certificados/logoInstitutoNu.png"
+                    alt="logo instituto NU + descomplica"></a>
+              </div>
+
+              <div class="curso__texto d-flex flex-column align-items-center py-4">
+                <h3 class="curso__titulo text-uppercase text-center">Gestão de Projetos e Produtos</h3>
+                <p class="fw-bold text-center">
+                  Adquiri conhecimento em técnicas e ferramentas para gestão de projetos e produtos capacitando-me a
+                  gerenciar de forma eficaz o ciclo de vida de projetos.
+                </p>
+              </div>
+            </div>
+
+            <div class="curso my-4">
+              <div class="curso__img d-flex justify-content-center align-items-center">
+                <a href="https://alunos.b7web.com.br/media/certificates/certificado_9192114.jpg" target="_blank"><img
+                    src="src/images/certificados/logo__b7web.png" alt="logo B7Web"></a>
+              </div>
+
+              <div class="curso__texto d-flex flex-column align-items-center py-4">
+                <h3 class="curso__titulo text-uppercase text-center">Git & Github</h3>
+                <p class="fw-bold text-center">
+                  Aprendi a utilizar comandos básicos do Git para criar e gerenciar repositórios, realizar commits,
+                  branches e merges. E também o GitHub para compartilhar e colaborar em projetos.
+                </p>
+              </div>
+            </div>
+
+            <div class="curso my-4">
+              <div class="curso__img d-flex justify-content-center align-items-center">
+                <a href="https://alunos.b7web.com.br/media/certificates/certificado_638559.jpg" target="_blank"><img
+                    src="src/images/certificados/logo__b7web.png" alt="logo B7Web"></a>
+              </div>
+
+              <div class="curso__texto d-flex flex-column align-items-center py-4">
+                <h3 class="curso__titulo text-uppercase text-center">HTML5 & CSS3</h3>
+                <p class="fw-bold text-center">
+                  Tecnologias essenciais para a criação de páginas web modernas e estilizadas. No curso, aprendi a
+                  utilizar os recursos do HTML5 para estruturar o conteúdo de forma semântica, além de explorar as
+                  funcionalidades avançadas do CSS3 para estilizar e posicionar elementos de forma responsiva.
+                </p>
+              </div>
+            </div>
+
+            <div class="curso my-4">
+              <div class="curso__img d-flex justify-content-center align-items-center">
+                <a href="https://alunos.b7web.com.br/media/certificates/certificado_9412033.jpg" target="_blank"><img
+                    src="src/images/certificados/logo__b7web.png" alt="logo B7Web"></a>
+              </div>
+
+              <div class="curso__texto d-flex flex-column align-items-center py-4">
+                <h3 class="curso__titulo text-uppercase text-center">Bootstrap</h3>
+                <p class="fw-bold text-center">
+                  Utilização de componentes pré-construídos do Bootstrap, como menus, botões, carousel e formulários,
+                  para agilizar o desenvolvimento de páginas web. Além disso, explorei o sistema de grid para criar
+                  layouts flexíveis e responsivos.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-center mb-5">
+          <button id="view_btn" class="banner__btn btn__form btn__more btn__curso text-uppercase">Ver mais</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="area-projetos">
+      <img src="src/images/onda.png" class="divisoria img-fluid">
+      <div class="bg">
+        <div class="container">
+          <div class="projetos d-flex flex-column align-items-center pt-5 pb-2 py-md-5">
+            <h2 class="titulo-section-roxa">Últimos Projetos</h2>
+
+            <div class="projetos__esquerda d-flex flex-column flex-md-row align-items-center py-5">
+              <div class="projeto__img d-flex justify-content-center align-items-center">
+                <img src="src/images/projeto/Projeto.png" alt="imagem projeto">
+              </div>
+
+              <div class="projeto__texto d-flex flex-column align-items-center align-items-md-start ms-md-4 mt-4">
+                <h3 class="projeto__titulo text-center text-md-start">Advice Generator App - HTML, CSS & JS</h3>
+                <p class="projeto__texto text-center text-md-start">
+                  Gerador de conselhos aleatórios, desenvolvido com HTML, CSS, JavaScrip e também utilizei a API Advice
+                  Slip. <br /> Para receber um conselhos
+                  basta clicar no dado.
+                </p>
+                <div class="projeto__btns d-flex justify-content-start">
+                  <a href="https://github.com/gaberelaa/gerador_conselhosAleatorios"
+                    class="btn d-flex justify-content-center align-items-center me-3" target="_blank">Repositório</a>
+                  <a href="https://gaberelaa.github.io/gerador_conselhosAleatorios/"
+                    class="btn d-flex justify-content-center align-items-center" target="_blank">Ver demo</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="projetos__direita d-flex flex-column flex-md-row align-items-center py-5">
+              <div class="projeto__texto d-flex flex-column align-items-center align-items-md-end me-md-4 mb-4">
+                <h3 class="projeto__titulo text-center text-md-end">Interactive Rating Component - HTML, CSS & JS</h3>
+                <p class="projeto__texto text-center text-md-end">
+                  Um card de avaliação interativa, onde o usuário poderá escolher uma nota para um possível serviço, e
+                  após selecionado receberá um card com o agradecimento pelo voto.
+                </p>
+                <div class="projeto__btns d-flex justify-content-end">
+                  <a href="https://github.com/gaberelaa/AvaliacaoInterativa"
+                    class="btn d-flex justify-content-center align-items-center me-3" target="_blank">Repositório</a>
+                  <a href="https://gaberelaa.github.io/AvaliacaoInterativa/"
+                    class="btn d-flex justify-content-center align-items-center" target="_blank">Ver demo</a>
+                </div>
+              </div>
+
+              <div class="projeto__img d-flex justify-content-center align-items-center">
+                <img src="src/images/projeto/projeto2.png" alt="imagem projeto">
+              </div>
+            </div>
+
+            <div class="projetos__esquerda d-flex flex-column flex-md-row align-items-center py-5">
+              <div class="projeto__img d-flex justify-content-center align-items-center">
+                <img src="src/images/projeto/Projeto3.png" alt="imagem projeto">
+              </div>
+
+              <div class="projeto__texto d-flex flex-column align-items-center align-items-md-start ms-md-4 mt-4">
+                <h3 class="projeto__titulo text-center text-md-start">Landing Page SunnySide - HTML, CSS & BootstrapS</h3>
+                <p class="projeto__texto text-center text-md-start">
+                  Landing page para agência Sunnyside responsiva.
+                </p>
+                <div class="projeto__btns d-flex">
+                  <a href="https://github.com/gaberelaa/Sunnyside.LandingPage"
+                    class="btn d-flex justify-content-center align-items-center me-3" target="_blank">Repositório</a>
+                  <a href="https://gaberelaa.github.io/Sunnyside.LandingPage/"
+                    class="btn d-flex justify-content-center align-items-center" target="_blank">Ver demo</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="projetos__direita d-flex flex-column flex-md-row align-items-center py-5">
+              <div class="projeto__texto d-flex flex-column align-items-center align-items-md-end me-md-4 mb-4">
+                <h3 class="projeto__titulo text-center text-md-end">Landing Page Huddle - HTML, CSS & Bootstrap</h3>
+                <p class="projeto__texto text-center text-md-end">
+                  Landing page Huddle responsiva.
+                </p>
+                <div class="projeto__btns d-flex justify-content-end">
+                  <a href="https://github.com/gaberelaa/Huddle.landingpage"
+                    class="btn d-flex justify-content-center align-items-center me-3" target="_blank">Repositório</a>
+                  <a href="https://gaberelaa.github.io/Huddle.landingpage/"
+                    class="btn d-flex justify-content-center align-items-center" target="_blank">Ver demo</a>
+                </div>
+              </div>
+
+              <div class="projeto__img d-flex justify-content-center align-items-center">
+                <img src="src/images/projeto/projeto4.png" alt="imagem projeto">
+              </div>
+            </div>
+          </div>
+          </div>
+
+          
+
+          <div class="d-flex justify-content-center pb-5">
+            <a href="https://github.com/gaberelaa?tab=repositories"
+              class="btn btn__more text-uppercase py-4 d-flex justify-content-center align-items-center"
+              target="_blank">Outros Projetos</a>
+          </div>
+        </div>
+      </div>
+      <img src="src/images/onda_1.png" class="divisoria img-fluid">
+    </section>
+
+    <section id="skills">
+      <div class="container">
+        <div class="skills__content d-flex justify-content-center align-items-center my-5">
+          <div class="skills d-flex flex-column align-items-center">
+            <h2 class="titulo-section-branca my-5">Skills</h2>
+
+            <ul class="skills__list d-flex justify-content-evenly flex-wrap flex-row p-0">
+              <li class="skills__list-item d-flex justify-content-start align-items-end p-3 mb-4">
+                <img src="src/images/skills/js.png" alt="logo javascript">
+              </li>
+              <li class="skills__list-item d-flex justify-content-start align-items-end p-3 mb-4">
+                <img src="src/images/skills/react.png" alt="logo react">
+              </li>
+              <li class="skills__list-item d-flex justify-content-start align-items-end p-3 mb-4">
+                <img src="src/images/skills/html.png" alt="logo html">
+              </li>
+              <li class="skills__list-item d-flex justify-content-start align-items-end p-3">
+                <img src="src/images/skills/css.png" alt="logo css">
+              </li>
+              <li class="skills__list-item d-flex justify-content-start align-items-end p-3">
+                <img src="src/images/skills/bootstrap.png" alt="logo bootstrap">
+              </li>
+              <li class="skills__list-item d-flex justify-content-start align-items-end p-3">
+                <img src="src/images/skills/git.png" alt="logo git">
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato">
+      <img src="src/images/onda.png" class="divisoria img-fluid">
+      <div class="bg">
+        <div class="container p-0">
+          <div class="contato__content d-flex justify-content-md-center align-items-center py-5">
+            <div class="contato__img me-5">
+              <img src="src/images/contact/Inbox cleanup-pana.svg" alt="">
+            </div>
+
+            <div class="contato__form d-flex flex-column align-items-center justify-content-center">
+              <h2 class="titulo-section-roxa text-center">Contato</h2>
+              <form action="https://formsubmit.co/42e1a36c0c9236c0101e891fdc2cc5ad" method="POST" class="form d-flex flex-column align-items-center justify-content-center" id="myForm" >
+                <div class="form__group">
+                  <label class="form__label ps-3" for="name">Nome</label>
+                  <input placeholder="Digite o seu nome completo" class="form__input p-3" type="text"
+                    oninput="validaNome(0)" name="name" maxlength="50">
+                  <span id="inputError" class="ps-3">O nome deve conter mais do que 3 caracteres.</span>
+                </div>
+                <div class="form__group">
+                  <label class="form__label ps-3" for="email">E-mail</label>
+                  <input placeholder="Digite o seu e-mail" class="form__input p-3" name="email" id="email" type="email"
+                    oninput="validaEmail()">
+                  <span id="inputError" class="ps-3">Digite um e-mail válido.</span>
+                </div>
+                <div class="form__group">
+                  <label class="form__label ps-3" for="name">Assunto</label>
+                  <input placeholder="Digite o assunto" class="form__input p-3" name="_subject" type="text" oninput="validaNome(2)"
+                    maxlength="50">
+                  <span id="inputError" class="ps-3">Por favor, digite o motivo do seu contato.</span>
+                </div>
+                <div class="form__group">
+                  <label class="form__label ps-3" for="message">Mensagem</label>
+                  <textarea placeholder="Digite a sua mensagem..." class="form__input p-3" name="message" id="message"
+                    maxlength="300" oninput="validaNome(3)"></textarea>
+                  <span id="inputError" class="ps-3">A sua mensagem deve conter mais do que 3 caracteres.</span>
+                </div>
+                <button class="banner__btn btn__form text-uppercase p-3" type="submit">Enviar mensagem</button>
+
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_next" value="http://127.0.0.1:5501/">
+                <input type="hidden" name="_autoresponse" value="Mensagem recebida, obrigada pelo contato!">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="d-flex justify-content-center py-3 fw-bold">
+    <a href="#">&copy; Gabriela Zunino, 2023.</a>
+  </footer>
+  <a href="#home" class="setaHome"><img src="src/images/arrow-up-circle-fill.svg" alt="Voltar ao topo"></a>
+</body>
+
+</html>
