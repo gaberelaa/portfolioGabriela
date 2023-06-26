@@ -404,14 +404,6 @@ body::-webkit-scrollbar-thumb:hover {
         font-size: 70%;
     }
 
-    .div__top {
-        content: url(/src/images/bordas_devices/onda_phone.png);
-    }
-
-    .div__bottom {
-        content: url(/src/images/bordas_devices/onda_1_phone.png);
-    }
-
     .setaHome {
         right: 1rem;
         bottom: 1rem;
