@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gabriela Zunino — Desenvolvedora Front-End</title>
+    <meta
+      name="description"
+      content="Portfólio de desenvolvedora front-end. Interfaces elegantes, acessíveis e performáticas."
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=DM+Serif+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="assets/favgz.png" type="image/x-icon">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div class="container">
+        <a href="#hero" class="logo">Portfólio<span>.</span></a>
+        <nav class="mobile-hidden">
+          <a href="#projetos">Projetos</a>
+          <a href="#skills">Skills</a>
+          <a href="#formacao">Formação</a>
+          <a href="#contato">Contato</a>
+        </nav>
+        <div style="display: flex; align-items: center; gap: 0.75rem">
+          <button
+            class="theme-toggle"
+            id="theme-toggle"
+            aria-label="Alternar tema"
+          >
+            🌙
+          </button>
+          <a href="#contato" class="header-cta">Fale comigo ↗</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- HERO -->
+      <section class="hero" id="hero">
+        <div class="container">
+          <div class="hero-inner">
+            <p class="hero-label fade-in">Desenvolvedora Front-End</p>
+            <h1 class="fade-in fade-in-d1">Gabriela Zunino<span>.</span></h1>
+            <p class="fade-in fade-in-d2">
+              Criando interfaces elegantes, acessíveis e performáticas.
+              Apaixonada por transformar design em código limpo e funcional.
+            </p>
+            <div class="hero-buttons fade-in fade-in-d3">
+              <a href="#projetos" class="btn btn-primary">Ver projetos</a>
+              <a href="#contato" class="btn btn-outline">Entrar em contato</a>
+            </div>
+          </div>
+          <!-- Substitua o src abaixo pela URL da sua foto -->
+          <div class="hero-photo fade-in fade-in-d2">
+            <img src="assets/gabrielazunino.png" alt="Foto de perfil" />
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJETOS -->
+      <section id="projetos">
+        <div class="container">
+          <p class="section-label">Portfólio</p>
+          <h2 class="section-title">Projetos<span>.</span></h2>
+          <div id="projects-list"></div>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section id="skills" class="section-alt">
+        <div class="container">
+          <p class="section-label">Competências</p>
+          <h2 class="section-title">Skills<span>.</span></h2>
+          <div class="skills-grid" id="skills-list"></div>
+        </div>
+      </section>
+
+      <!-- FORMAÇÃO -->
+      <section id="formacao">
+        <div class="container">
+          <p class="section-label">Formação</p>
+          <h2 class="section-title">Educação<span>.</span></h2>
+          <div id="education-list"></div>
+        </div>
+      </section>
+
+      <!-- CONTATO -->
+      <section id="contato" class="section-alt">
+        <div class="container">
+          <div class="contact">
+            <p class="section-label">Contato</p>
+            <h2 class="section-title">Vamos conversar<span>?</span></h2>
+            <p class="intro">
+              Tem um projeto em mente ou quer trocar uma ideia? Me mande uma
+              mensagem nas redes!
+            </p>
+            
+            <div class="contact-icon">
+              <span><a href="https://linkedin.com/in/gabrielazunino" target="_blank" rel="noopener"><img width="50" height="50" src="https://img.icons8.com/ios/50/linkedin-circled--v3.png" alt="linkedin-circled--v3"/></a></span>
+              <span><a href="https://github.com/gaberelaa" target="_blank" rel="noopener"><img width="50" height="50" src="https://img.icons8.com/ios/50/github--v2.png" alt="github--v2"/></a></span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+      <div class="container">
+        <p>
+          &copy; <span id="year"></span> Gabriela Zunino. Todos os direitos reservados.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
