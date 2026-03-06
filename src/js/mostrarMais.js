@@ -1,1 +1,0 @@
-const btnVerMais=document.querySelector("#view_btn");btnVerMais.addEventListener("click",verMais);function verMais(){const a=document.querySelector(".cursos");a.classList.toggle("active"),a.classList.contains("active")?(a.style.maxHeight=a.scrollHeight+"px",btnVerMais.textContent="Ver menos"):(a.style.maxHeight="300px",btnVerMais.textContent="Ver mais")}

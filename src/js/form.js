@@ -1,6 +1,0 @@
-const form=document.querySelector("#myForm"),campos=document.querySelectorAll(".form__input"),spanErro=document.querySelectorAll("#inputError"),emailRegex=/^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/,campoDoFormulario=document.querySelector(".contato__form");form.addEventListener("submit",a=>{a.preventDefault();let b=!0;validaNome(0)||(b=!1),validaNome(2)||(b=!1),validaNome(3)||(b=!1),validaEmail()||(b=!1),b&&(form.submit(),campoDoFormulario.innerHTML=`
-            <div class="messageSent d-flex flex-column align-items-center justify-content-center">
-                <img src="src/images/mailSent.gif" alt="email enviado" width="250px">
-                <h3 class="titulo-section-roxa text-center">E-mail enviado com sucesso!</h3>
-                <p class="projeto__texto text-center">Retornarei o contato em até 5 dias úteis.</p>
-            </div>`)});function setError(a){campos[a].style.border="2px solid rgb(245, 71, 71)",spanErro[a].style.display="block"}function removeError(a){campos[a].style.border="none",spanErro[a].style.display="none"}function validaNome(a){return 3>campos[a].value.length?(setError(a),!1):(removeError(a),!0)}function validaEmail(){return emailRegex.test(campos[1].value)?(removeError(1),!0):(setError(1),!1)}

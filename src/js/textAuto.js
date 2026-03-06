@@ -1,1 +1,0 @@
-const campoTexto=document.querySelector("#textAuto"),texto="Desenvolvedora Front-end.",interval=190;function digitacaoAutomatica(a,b,c){const d=b.split("").reverse(),e=setInterval(()=>{if(!d.length)return clearInterval(e);const b=d.pop();a.innerHTML+=b},c)}digitacaoAutomatica(campoTexto,texto,interval);
